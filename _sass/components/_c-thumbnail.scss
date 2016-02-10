@@ -1,0 +1,48 @@
+.c-thumbnail {
+  min-width: 210px;
+
+  > .thumbnail-image {
+    position: relative;
+    height: auto;
+    padding: 45px 15px;
+    text-align: center;
+    background-repeat: repeat-y;
+
+    &.-black {
+      background-image: url('../images/01-brand-guidelines/01-07-download-resources/1-7-bg-black.png');
+    }
+
+    &.-purple {
+      background-image: url('../images/01-brand-guidelines/01-07-download-resources/1-7-bg-cf.png');
+    }
+
+    &.-green {
+      background-image: url('../images/01-brand-guidelines/01-07-download-resources/1-7-bg-cfr.png');
+    }
+
+    &.-white {
+      background-image: url('../images/01-brand-guidelines/01-07-download-resources/1-7-bg-light.png');
+    }
+
+    &.-blue {
+      background-image: url('../images/01-brand-guidelines/01-07-download-resources/1-7-bg-odri.png');
+    }
+
+    &.-turquoise {
+      background-image: url('../images/01-brand-guidelines/01-07-download-resources/1-7-bg-sia.png');
+    }
+
+    &.-orange {
+      background-image: url('../images/01-brand-guidelines/01-07-download-resources/1-7-bg-th.png');
+    }
+
+    &.-red {
+      background-image: url('../images/01-brand-guidelines/01-07-download-resources/1-7-bg-ur.png');
+    }
+  }
+
+  .formats {
+    display: flex;
+    justify-content: space-between;
+  }
+}

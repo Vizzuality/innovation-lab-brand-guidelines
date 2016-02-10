@@ -1,0 +1,23 @@
+---
+layout: post
+title:  "Cards"
+date:   0009-01-01 12:23:49
+categories: website common-elements
+
+---
+
+Cards are a useful way to provide a quick highlight about a certain project, resource or piece of news. They are key on the navigation between pages.
+
+<div class="c-image">
+  <img src="/innovation-lab-brand-guidelines/images/02-website/02-02-common-elements/02-02-01-cards/2-7-a.png" alt="2-7-a.png">
+</div>
+
+<ul class="c-list -alphabetic">
+  <li>Thumbnail.</li>
+  <li>Title of the linked content. It works as link.</li>
+  <li>Summary of the content. Up to 120 characters.</li>
+  <li>Related information, like tags, location, pillar, author and/or date pillar.</li>
+</ul>
+
+
+The mixture of an appealing picture, distinctive call to action and basic contextual information should entice users to navigate to the new page. They can be found as part of almost every page.

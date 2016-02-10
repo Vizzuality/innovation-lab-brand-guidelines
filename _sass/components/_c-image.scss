@@ -1,0 +1,21 @@
+.c-image {
+  margin: 45px -45px 45px -65px;
+
+  &.-delimiter {
+    &:after {
+      content: '';
+      display: block;
+      height: 3px;
+      width: 80%;
+      margin: 35px auto;
+      background-color: rgba($greyish-brown, .1);
+    }
+  }
+
+  &.-no-margin-bottom {
+    margin-bottom: 0;
+    &:last-child {
+      margin-bottom: -47px;
+    }
+  }
+}

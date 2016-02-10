@@ -1,42 +1,41 @@
 ---
 # Only the main Sass file needs front matter (the dashes are enough)
 ---
-@charset "utf-8";
-
-// Our variables
-$base-font-family: "Fira Sans", Georgia, serif;
-$base-font-size:   16px;
-$base-line-height: 1.5;
-
-
-//Colors
-$cGreen: #97Bd3d;
-$cGreen1: #A1BA42;
-$white: #FFF;
-$dark: #555555;
-$ligthen-dark: #888;
-$gray: #BBB;
-$light: #FAFAFA;
-$red: #ED1846;
-$orange: #E98300;
-$border: #E5E5DF;
-
-//Animation
-$easeInOutCubic :  cubic-bezier(0.645, 0.045, 0.355, 1.000);
-
 
 // Import settings
 @import
+  "reset",
+  "fonts",
+  "vars",
+  "helpers",
   "base",
-  "layout",
   "grid",
+  "icons",
   "mixins",
+  "buttons",
   "syntax-highlighting";
 
 // Import layouts
 @import
-  "layouts/header",
-  "layouts/sidenav",
+  "layouts/l-header",
+  "layouts/l-sidenav",
+  "layouts/l-content",
   "layouts/post",
-  "layouts/code-snippet",
+  "layouts/l-footer",
   "layouts/color-gallery";
+
+// Import modules
+@import
+  "modules/m-post-bar",
+  "modules/m-post";
+
+// Import components
+@import
+  "components/c-pagination",
+  "components/c-image",
+  "components/c-list",
+  "components/c-curtain",
+  "components/c-thumbnail",
+  "components/c-code-snippet";
+
+

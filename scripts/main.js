@@ -7,7 +7,7 @@ var SnippetModel = Backbone.Model.extend({
 
 var SidebarView = Backbone.View.extend({
 
-  el: '.layout-sidenav',
+  el: '.l-sidenav',
 
   events: {
     'click .item-selected': 'setMenu'
@@ -27,7 +27,7 @@ var SidebarView = Backbone.View.extend({
     e && e.preventDefault();
 
     var lists = this.$el.find('.third-level'),
-      current = this.$el.find('[data-location="' + this.currentTarget + '"]'),
+      current = this.$el.find('[data-location="' + this.currentTarget + '"]');
       currentList = $(current).parents('.third-level').length > 0 ?
         $(current).parents('.third-level') : $(current).next();
 
@@ -47,12 +47,12 @@ var SidebarView = Backbone.View.extend({
 
   openMenu: function() {
     this.prev().addClass('open');
-    this.removeClass('hidden');
+    this.removeClass('is-hidden');
   },
 
   closeMenu: function() {
     this.prev().removeClass('open');
-    this.addClass('hidden');
+    this.addClass('is-hidden');
   }
 
 });
@@ -99,7 +99,7 @@ var SnippetView = Backbone.View.extend({
 
   toggleSnippet: function(){
     var hidden = this.model.get('hidden');
-    this.$snippet.toggleClass('hidden', hidden);
+    this.$snippet.toggleClass('is-hidden', hidden);
     if (!hidden) {
       this.$showCode.text('Hide code');
     }else{
@@ -117,11 +117,11 @@ var SnippetView = Backbone.View.extend({
     var lang = this.model.get('lang');
     // reset
     this.$langBtn.removeClass('active');
-    this.$langSnippet.addClass('hidden');
+    this.$langSnippet.addClass('is-hidden');
 
     //current
     this.$el.find('.lang[data-lang="'+lang+'"]').addClass('active');
-    this.$el.find('.language-'+lang).removeClass('hidden');
+    this.$el.find('.language-'+lang).removeClass('is-hidden');
   }
 
 });
@@ -207,6 +207,21 @@ var ColorGallery = Backbone.View.extend({
 
 });
 
+var DownloadView = Backbone.View.extend({
+
+  el: '.c-curtain',
+
+  events: {
+    'click li' : '_toggle'
+  },
+
+  _toggle: function(e) {
+    var $li = $(e.currentTarget);
+    $li.toggleClass('-open');
+  }
+
+});
+
 
 (function(){
   // View inits
@@ -219,6 +234,8 @@ var ColorGallery = Backbone.View.extend({
     new ColorGallery({el: '#layer-colors'});
 
   };
+
+  new DownloadView();
 
   // Snippet
   _.each($('.code-snippet-box'), function(v,k){

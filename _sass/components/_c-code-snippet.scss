@@ -1,0 +1,89 @@
+.c-code-snippet {
+  margin: 45px -45px -45px -65px;
+  padding: 0 45px 40px 45px;
+  background-color: $gray;
+
+  .code-snippet-box{
+    overflow: auto;
+    @extend %clearfix;
+    width: 100%;
+    transform: translateY(-20px);
+    box-shadow: 0 1px 7px 0 rgba(0, 0, 0, 0.1);
+  }
+  .show-code {
+    position: relative;
+    float: right;
+    margin-bottom: 20px;
+    padding-right: 13px;
+    color: $gray;
+    text-transform: uppercase;
+    cursor: pointer;
+    &:after {
+      @include arrow('right', 9px, 3px, $gray, 45deg);
+      top: 6px;
+    }
+  }
+
+  .code-snippet {
+    color: $white;
+    border-radius: 7px;
+    background: $color-2;
+
+    .tabs {
+      position: relative;
+      background: $color-1;
+      ul {
+        overflow: hidden;
+        padding: 10px 5px 10px 5px !important;
+        li {
+          float: left;
+          padding: 0 !important;
+          &:before {
+            width: 0;
+            height: 0;
+          }
+          a {
+            display: inline-block;
+            padding: 4px 10px 2px;
+            font-size: 13px;
+            color: $font-color-3 !important;
+            &:nth-child(2n+1) {
+              margin: 0 5px;
+            }
+            &.active {
+              color: $font-color-2 !important;
+              background: $color-2;
+              border-radius: 15px;
+            }
+          }
+        }
+      }
+      .close {
+        position: absolute;
+        top: 50%;
+        right: 15px;
+        transform: translate(0, -50%);
+        cursor: pointer;
+        color: $greyish-brown;
+      }
+    }
+
+    .lang-snippet {
+      overflow: auto;
+      max-height: 250px;
+    }
+
+    .highlight {
+      font-family: 'Inconsolata';
+      -webkit-font-smoothing: subpixel-antialiased;
+      padding: 15px;
+      line-height: 1.2em;
+      background: $color-2;
+      > pre {
+        color: $font-color-1;
+        white-space: pre-wrap;
+      }
+    }
+  }
+}
+

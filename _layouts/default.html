@@ -2,14 +2,14 @@
 <html>
   {% include head.html %}
   <body>
+    {% include svg.html %}
     {% include header.html %}
     <div class="wrap">
       {% include sidenav.html %}
-      <div class="layout-main">
+      <div class="l-content">
         {{ content }}
       </div>
     </div>
-    {% include footer.html %}
   </body>
   {% include scripts.html %}
 </html>

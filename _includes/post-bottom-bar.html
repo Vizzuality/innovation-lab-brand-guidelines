@@ -1,9 +1,13 @@
-<div class="post-bottom-bar">
-  <div class="pagination">
-    {% if page.next %}
-      <a class="next" href="{{ site.baseurl }}{{page.next.url}}">Next: <span class="next-title">{{page.next.title}}</span></a>
-    {% else %}
-      <a class="back" href="{{ site.baseurl }}/">Back to <span class="next-title">home</span></a>
-    {% endif %}
+<div class="m-post-bar -bottom">
+  <div class="inner">
+    <div class="post-bar-container">
+      <div class="c-pagination -single-item">
+      {% if page.next %}
+        <a class="next" href="{{ site.baseurl }}{{page.next.url}}"><span class="next-title">{{page.next.title}}</span></a>
+      {% else %}
+        <a class="back-home" href="{{ site.baseurl }}/">Back to home</a>
+      {% endif %}
+      </div>
+    </div>
   </div>
 </div>

@@ -1,0 +1,48 @@
+.c-curtain {
+  > ul {
+    padding-left: 0 !important;
+    > li  {
+      padding: 20px 0 20px 0 !important;
+      border-bottom: 2px rgba($greyish-brown, .1) solid;
+      &:before {
+        display: none;
+      }
+      > h3 {
+        position: relative;
+        cursor: pointer;
+        margin: 0 !important;
+
+        &:after {
+          @include arrow('right', 8px, 2px, rgba($greyish-brown, .5), 45deg);
+          top: calc(50% - 2px);
+          right: 4px;
+          transform: rotate(45deg) translate(0, -50%);
+        }
+      }
+
+      &.-open {
+        h3:after {
+          @include arrow('right', 8px, 2px, rgba($greyish-brown, .5), 135deg);
+        }
+        > .container {
+          display: block;
+        }
+      }
+    }
+  }
+
+  .container {
+    display: none;
+    > h4 {
+      margin: 20px 0 10px 0;
+    }
+    > .row {
+      display: flex;
+      justify-content: space-between;
+      margin: 15px 0;
+      &:first-of-type {
+        margin-bottom: 45px;
+      }
+    }
+  }
+}

@@ -1,0 +1,23 @@
+.m-post-bar{
+
+  .post-bar-container {
+    display: flex;
+    justify-content: space-between;
+
+    > h3 {
+      width: 100%;
+      font-family: $font-family-2;
+      font-weight: 700;
+      color: rgba($font-color-1, .3);
+      text-transform: uppercase;
+      > a {
+        color: rgba($font-color-1, .3);
+      }
+    }
+
+    &.-single-item {
+      width: auto;
+      justify-content: flex-end;
+    }
+  }
+}

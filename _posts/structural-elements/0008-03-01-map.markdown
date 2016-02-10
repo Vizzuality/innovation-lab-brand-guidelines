@@ -1,0 +1,19 @@
+---
+layout: post
+title:  "Map"
+date:   0008-03-01 12:23:49
+categories: website structural-elements
+
+---
+
+Each map section consists of two key elements: a basemap created using Mapbox and interactions and data operating through CartoDB. Any additions, edits or changes to the data in your CartoDB account will change how the data in these maps almost instantly.
+
+<div class="c-image -no-margin-bottom">
+  <img src="/innovation-lab-brand-guidelines/images/02-website/02-01-structural-elements/02-01-03-map/2-4-a.png" alt="2-4-a.png">
+</div>
+
+The top image shows datapoints clustered by region, while the image below shows a map where each individual point is visualised. A tooltip, based on the ‘card’ element, <a target="_blank" href="/">described in this guide</a>, is shown in this second image.
+
+<div class="c-image -no-margin-bottom">
+  <img src="/innovation-lab-brand-guidelines/images/02-website/02-01-structural-elements/02-01-03-map/2-4-b.png" alt="2-4-b.png">
+</div>

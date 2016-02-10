@@ -1,16 +1,17 @@
 ---
 layout: default
 ---
-<section class="post-section">
+<section class="m-post post-section">
   {% include post-top-bar.html %}
-  <header>
-    <h2>{{ page.title }}</h2>
-    <!-- <p class="post-meta">{{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</p> -->
-  </header>
+  <div class="post-wrapper">
+    <header>
+      <h2>{{ page.title }}</h2>
+      <!-- <p class="post-meta">{{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</p> -->
+    </header>
 
-  <article class="post-content">
-    {{ content }}
-  </article>
-  {% include post-bottom-bar.html %}
-
+    <article class="post-content">
+      {{ content }}
+    </article>
+  </div>
+    {% include post-bottom-bar.html %}
 </section>

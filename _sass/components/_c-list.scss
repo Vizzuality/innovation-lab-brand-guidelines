@@ -1,0 +1,21 @@
+.c-list {
+  padding-left: 30px;
+  line-height: 40px;
+
+  > li{
+    position: relative;
+    color: $font-color-1;
+    font-weight: 500;
+  }
+
+  &.-alphabetic {
+    counter-reset: letter;
+    > li:before {
+      content: counter(letter, upper-latin);
+      counter-increment: letter;
+      margin-right: 20px;
+      color: $font-color-2;
+      font-weight: 700;
+    }
+  }
+}

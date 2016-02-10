@@ -1,0 +1,34 @@
+@charset "utf-8";
+
+//Colors
+$water-blue: #2475af;
+$white: #fff;
+$greyish-brown: #555;
+$red: #db0033;
+$gray: #f0f0f0;
+
+$cGreen: #97Bd3d;
+$cGreen1: #A1BA42;
+$dark: #555555;
+$ligthen-dark: #888;
+$light: #FAFAFA;
+$orange: #E98300;
+$border: #E5E5DF;
+
+// Main colors
+$color-1: $water-blue;
+$color-2: $white;
+$color-3: $gray;
+
+// Typography
+$font-family-1: 'Helvetica', 'Arial', sans-serif;
+$font-family-2: 'Bariol', serif;
+$base-font-size: 15px;
+
+$font-color-1: $greyish-brown;
+$font-color-2: $water-blue;
+$font-color-3: $white;
+
+//Animation
+$easeInOutCubic :  cubic-bezier(0.645, 0.045, 0.355, 1.000);
+

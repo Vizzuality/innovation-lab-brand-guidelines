@@ -1,0 +1,14 @@
+.l-footer {
+  margin-top: 10px;
+  border-top: 2px rgba($greyish-brown, .1) solid;
+
+  > a:first-child {
+    display: inline-block;
+    width: 100%;
+    margin: 20px 0;
+
+    > img {
+      width: 100%;
+    }
+  }
+}

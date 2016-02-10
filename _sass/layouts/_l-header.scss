@@ -1,0 +1,29 @@
+.l-header{
+  z-index: 2;
+  position: fixed;
+  left: 0;
+  right: 0;
+  background: $color-1;
+
+  nav {
+    display: flex;
+    padding: 20px 0;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  nav > h1 {
+    display: inline-block;
+    > a {
+      display: inline-block;
+      width: 225px;
+      height: 45px;
+    }
+  }
+
+  nav > h2 {
+    display: inline-block;
+    color: $font-color-3;
+    text-transform: uppercase;
+  }
+}

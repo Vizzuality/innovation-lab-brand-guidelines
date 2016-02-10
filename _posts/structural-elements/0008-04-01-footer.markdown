@@ -1,0 +1,19 @@
+---
+layout: post
+title:  "Footer"
+date:   0008-04-01 12:23:49
+categories: website structural-elements
+
+---
+
+The footer is another universal part of the site: it is on every page. It helps people sign up for the newsletter or navigate to other parts of the site after finishing a page.
+
+<div class="c-image">
+  <img src="/innovation-lab-brand-guidelines/images/02-website/02-01-structural-elements/02-01-05-footer/2-5-a.png" alt="2-5-a.png">
+</div>
+
+The footer is 270px high, its background responds to the width of the window, and its content are inline with the rest of the content in the site.
+
+<div class="c-image">
+  <img src="/innovation-lab-brand-guidelines/images/02-website/02-01-structural-elements/02-01-05-footer/2-5-b.png" alt="2-5-b.png">
+</div>

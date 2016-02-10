@@ -1,0 +1,13 @@
+---
+layout: post
+title:  "Posters"
+date:   0015-01-01 12:23:49
+categories: communication-material
+
+---
+
+Posters can come in two forms, very similar to the publications front page: image, text and logo or text and logo in a text box placed over the top of the image.
+
+<div class="c-image">
+  <img src="/innovation-lab-brand-guidelines/images/03-communication-materiale/03-04-posters/.png" alt=".png">
+</div>

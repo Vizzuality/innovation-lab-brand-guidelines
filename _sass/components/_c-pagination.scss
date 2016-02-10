@@ -1,0 +1,33 @@
+.c-pagination {
+  display: flex;
+  width: 100%;
+  padding-right: 10px;
+  justify-content: flex-end;
+  align-items: center;
+  font-family: $font-family-2;
+  > .prev, .next, .back-home {
+    position: relative;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: $font-color-2;
+  }
+  > .prev {
+    margin-right: 30px;
+    padding-left: 13px;
+    &:before {
+      @include arrow('left', 9px, 2px, $water-blue, -45deg);
+      top: 4px;
+    }
+  }
+  > .next {
+    padding-right: 13px;
+    &:after {
+      @include arrow('right', 9px, 2px, $water-blue, 45deg);
+      top: 4px;
+    }
+  }
+
+  &.-single-item a {
+    margin: 0;
+  }
+}
